@@ -17,4 +17,4 @@ services:
 
 networks:
   xapp:
-    external: true
+    # external: true
