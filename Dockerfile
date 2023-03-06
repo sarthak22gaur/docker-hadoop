@@ -34,6 +34,8 @@ COPY startup.sh $HADOOP_HOME/startup.sh
 COPY hadoop_config /usr/local/hadoop/etc/hadoop
 COPY ssh_config/config /root/.ssh/
 
+RUN mkdir -p /home/BD
+
 RUN chmod 744 -R $HADOOP_HOME
 
 EXPOSE 9870 9864 9868 8088 9000 8042
